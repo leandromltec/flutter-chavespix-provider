@@ -28,7 +28,7 @@ class _KeyPixCellPhonePageState extends State<KeyPixCellPhonePage> {
           SizedBox(
             height: 50,
           ),
-          BtnRegisterKey()
+          BtnRegisterKey(null)
         ],
       ),
     ));

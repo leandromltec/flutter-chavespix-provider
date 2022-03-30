@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import '../../core/libraries/strings.dart' as strings;
 
 class BtnRegisterKey extends StatelessWidget {
+  final Function? validateKey;
+
+  BtnRegisterKey(this.validateKey);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +19,7 @@ class BtnRegisterKey extends StatelessWidget {
             strings.btnRegisterKey,
             style: TextStyle(fontSize: 16),
           ),
-          onPressed: () {}),
+          onPressed: validateKey!()),
     );
   }
 }
