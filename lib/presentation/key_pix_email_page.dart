@@ -27,7 +27,7 @@ class _KeyPixEmailPageState extends State<KeyPixEmailPage> {
           SizedBox(
             height: 50,
           ),
-         BtnRegisterKey()
+         BtnRegisterKey(null)
         ],
       ),
     ));

@@ -29,7 +29,7 @@ class _PixKeyRandomKeyPageState extends State<PixKeyRandomKeyPage> {
           SizedBox(
             height: 50,
           ),
-          BtnRegisterKey()
+          BtnRegisterKey(null)
         ],
       ),
     ));

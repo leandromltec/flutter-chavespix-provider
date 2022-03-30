@@ -27,7 +27,7 @@ class _KeyPixCPFCNPJPageState extends State<KeyPixCPFCNPJPage> {
           SizedBox(
             height: 50,
           ),
-          BtnRegisterKey()
+          BtnRegisterKey(null)
         ],
       ),
     ));

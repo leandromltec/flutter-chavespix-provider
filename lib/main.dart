@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../core/libraries/strings.dart' as strings;
-import 'presentation/key_pix_cpf_page.dart';
 import 'presentation/master_page.dart';
 import 'repository/keypix_repository.dart';
 
