@@ -6,7 +6,7 @@ class KeyPixController {
       case "CPF":
         return validateCPFkey(valueCpf: value);
       case "Celular":
-        return true;
+        return validatePhone(valuePhone: value);
       default:
         return false;
     }
@@ -15,6 +15,13 @@ class KeyPixController {
   static bool validateCPFkey({required String valueCpf}) {
     if (valueCpf.length == 14) {
       return CPFController.isValid(cpf: valueCpf);
+    }
+    return false;
+  }
+
+  static bool validatePhone({required String valuePhone}) {
+    if (valuePhone.length == 14) {
+      return true;
     }
     return false;
   }
