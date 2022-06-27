@@ -1,15 +1,15 @@
 library strings;
 
-const cpfCnpjHintText = "Digite o CPF ou CNPJ";
-const nameKeyCPFCNPJ = "CPF/CNPJ";
+const cpfCnpjHintText = "000.000.000-00";
+const nameKeyCPFCNPJ = "CPF";
 
-const cellPhoneHintText = "Digite o número de celular";
+const cellPhoneHintText = "(00)00000-0000";
 const nameKeyCellPhone = "Celular";
 
-const emailHintText = "Digite o e-mail";
+const emailHintText = "Digite o seu e-mail";
 const nameKeyEmail = "E-mail";
 
-const randomKeyHintText = "Digite a chave aleatória";
+const randomKeyHintText = "Digite ou cole a chave aleatória";
 const nameKeyRandomKey = "Chave Aleatória";
 
 const btnRegisterKey = "Cadastrar";

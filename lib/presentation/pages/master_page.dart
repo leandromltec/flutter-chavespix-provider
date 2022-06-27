@@ -13,14 +13,13 @@ class _MasterPageState extends State<MasterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xFF6200FF),
-        title: Text(
-          "Chaves Pix",
-          style: TextStyle(color: Colors.white),
+        appBar: AppBar(
+          backgroundColor: Color(0xFF6200FF),
+          title: Text(
+            "Chaves Pix",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-      ),
-      body: widget.body,
-    );
+        body: widget.body);
   }
 }
