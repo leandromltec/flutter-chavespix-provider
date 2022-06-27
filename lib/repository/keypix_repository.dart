@@ -23,7 +23,7 @@ class KeysRepository extends ChangeNotifier {
   KeysRepository() {
     _keys.addAll([
       KeyPix(
-          leading: Icon(Icons.person, color: Color(0xFF6200FF)),
+          leading: Icon(Icons.person, color: Color(0xFFD50000)),
           nameKey: strings.nameKeyCPFCNPJ,
           pageRedirect: PageDefaultPix(
             hintText: strings.cpfCnpjHintText,
@@ -32,7 +32,7 @@ class KeysRepository extends ChangeNotifier {
             mask: mask.cpfMask,
           )),
       KeyPix(
-          leading: Icon(Icons.smartphone_rounded, color: Color(0xFF6200FF)),
+          leading: Icon(Icons.smartphone_rounded, color: Color(0xFFD50000)),
           nameKey: strings.nameKeyCellPhone,
           pageRedirect: PageDefaultPix(
             hintText: strings.cellPhoneHintText,
@@ -41,7 +41,7 @@ class KeysRepository extends ChangeNotifier {
             mask: mask.phoneMask,
           )),
       KeyPix(
-          leading: Icon(Icons.email, color: Color(0xFF6200FF)),
+          leading: Icon(Icons.email, color: Color(0xFFD50000)),
           nameKey: strings.nameKeyEmail,
           pageRedirect: PageDefaultPix(
             hintText: strings.emailHintText,
@@ -50,7 +50,7 @@ class KeysRepository extends ChangeNotifier {
             mask: mask.emptyMask,
           )),
       KeyPix(
-          leading: Icon(Icons.vpn_key, color: Color(0xFF6200FF)),
+          leading: Icon(Icons.vpn_key, color: Color(0xFFD50000)),
           nameKey: strings.nameKeyRandomKey,
           pageRedirect: PageDefaultPix(
             hintText: strings.randomKeyHintText,
