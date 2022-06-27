@@ -11,7 +11,7 @@ class BtnRegisterKey extends StatefulWidget {
 
   BtnRegisterKey(this.validateKeySelected, this.typedKey, this.correctKey);
 
-  bool hideButton = false;
+  bool blockedButton = false;
 
   @override
   State<BtnRegisterKey> createState() => _BtnRegisterKeyState();
@@ -28,14 +28,13 @@ class _BtnRegisterKeyState extends State<BtnRegisterKey> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        widget.hideButton == false
+        widget.blockedButton == false
             ? Container(
                 width: double.infinity,
                 height: 50,
-                color: Color(0xFF6200FF),
                 margin: EdgeInsets.only(left: 25, right: 25),
                 child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Color(0xFF6200FF)),
+                    style: ElevatedButton.styleFrom(primary: Color(0xFFD50000)),
                     child: Text(
                       strings.btnRegisterKey,
                       style: TextStyle(fontSize: 16),
@@ -50,7 +49,7 @@ class _BtnRegisterKeyState extends State<BtnRegisterKey> {
     Provider.of<KeysRepository>(context, listen: false)
         .validateKeys(widget.validateKeySelected, widget.typedKey);
     setState(() {
-      widget.hideButton = true;
+      widget.blockedButton = true;
     });
   }
 
@@ -61,7 +60,7 @@ class _BtnRegisterKeyState extends State<BtnRegisterKey> {
       };
     else {
       setState(() {
-        widget.hideButton = false;
+        widget.blockedButton = false;
       });
       return null;
     }

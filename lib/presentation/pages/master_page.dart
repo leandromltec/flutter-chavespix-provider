@@ -14,7 +14,7 @@ class _MasterPageState extends State<MasterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF6200FF),
+          backgroundColor: Color(0xFFD50000),
           title: Text(
             "Chaves Pix",
             style: TextStyle(color: Colors.white),

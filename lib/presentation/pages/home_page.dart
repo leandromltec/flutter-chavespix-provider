@@ -26,13 +26,13 @@ class _KeyPixHomeState extends State<KeyPixHome> {
           child: ListView.separated(
               itemCount: repository.keys.length,
               separatorBuilder: (_, index) => const Divider(
-                    color: Color(0xFF6200FF),
+                    color: Color(0xFFD50000),
                   ),
               itemBuilder: (BuildContext context, index) {
                 return ListTile(
                   title: Text(
                     listKeys[index].nameKey,
-                    style: TextStyle(color: Color(0xFF6200FF)),
+                    style: TextStyle(color: Color(0xFFD50000)),
                   ),
                   subtitle: listKeys[index].validKey == false
                       ? Text(strings.labelKeyNotRegistered)
