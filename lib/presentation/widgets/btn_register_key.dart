@@ -55,8 +55,12 @@ class _BtnRegisterKeyState extends State<BtnRegisterKey> {
 
   dynamic validateButton(bool correctKey) {
     if (correctKey)
-      return () {
+      return () async {
         updateKey(context);
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        await Future.delayed(Duration(seconds: 5), () {
+          Navigator.pop(context);
+        });
       };
     else {
       setState(() {
@@ -65,4 +69,12 @@ class _BtnRegisterKeyState extends State<BtnRegisterKey> {
       return null;
     }
   }
+
+  var snackBar = SnackBar(
+    content: Text("Chave cadastrada com Sucesso !"),
+    action: SnackBarAction(
+      label: "Redirecionando",
+      onPressed: () {},
+    ),
+  );
 }
