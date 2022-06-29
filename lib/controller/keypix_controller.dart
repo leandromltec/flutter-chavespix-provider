@@ -1,4 +1,5 @@
 import 'cpf_controller.dart';
+import 'package:chavespix/core/utils.dart';
 
 class KeyPixController {
   static bool getValidatedKey(String key, String value) {
@@ -7,6 +8,8 @@ class KeyPixController {
         return validateCPFkey(valueCpf: value);
       case "Celular":
         return validatePhone(valuePhone: value);
+      case "E-mail":
+        return validateEmail(valueEmail: value);
       default:
         return false;
     }
@@ -23,6 +26,11 @@ class KeyPixController {
     if (valuePhone.length == 14) {
       return true;
     }
+    return false;
+  }
+
+  static bool validateEmail({required String valueEmail}) {
+    if (valueEmail.contains("@")) return valueEmail.regexEmail();
     return false;
   }
 }
