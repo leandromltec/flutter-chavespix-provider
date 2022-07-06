@@ -4,7 +4,7 @@ import '../../repository/keypix_repository.dart';
 
 import 'master_page.dart';
 import 'package:flutter/material.dart';
-import '../../core/libraries/strings.dart' as strings;
+import '../../data/libraries/strings.dart' as strings;
 
 class KeyPixHome extends StatefulWidget {
   KeyPixHome({Key? key, required this.title}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../core/libraries/strings.dart' as strings;
+import '../../data/libraries/strings.dart' as strings;
 import '../../repository/keypix_repository.dart';
 
 class BtnRegisterKey extends StatefulWidget {

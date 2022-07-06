@@ -3,8 +3,8 @@ import 'dart:collection';
 import 'package:chavespix/presentation/pages/default_page.dart';
 import 'package:flutter/material.dart';
 
-import '../core/libraries/strings.dart' as strings;
-import '../core/libraries/masks.dart' as mask;
+import '../data/libraries/strings.dart' as strings;
+import '../data/libraries/masks.dart' as mask;
 import '../model/keypix_model.dart';
 
 class KeysRepository extends ChangeNotifier {
