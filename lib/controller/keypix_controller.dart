@@ -27,7 +27,7 @@ class KeyPixController {
 
   static bool validatePhoneKey({required String valuePhone}) {
     if (valuePhone.length == 14) {
-      return true;
+      return valuePhone.regexPhoneKey();
     }
     return false;
   }
