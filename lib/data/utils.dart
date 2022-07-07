@@ -7,6 +7,9 @@ extension BoolUtils on String {
           r"[a-eA-E0-9]{8}[-][a-eA-E0-9]{4}[-][a-eA-E0-9]{4}[-][a-eA-E0-9]{4}[-][0-9]{12}")
       .hasMatch(this);
 
+  bool regexPhoneKey() =>
+      RegExp(r"(\(?\d{2}\?\s)?(\d{5}\-\d{4})").hasMatch(this);
+
   bool validateCpf({required String cpf}) {
     if (cpf == "") return false;
 
