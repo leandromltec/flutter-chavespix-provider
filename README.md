@@ -1,16 +1,15 @@
-# chavespix
+# Flutter Chaves Pix (Provider)
 
-A new Flutter project.
+Exemplo de validção de Chaves Pix (CPF, E-mail, Celular e Chave aletatória) utilizando o framework Flutter na versão 2.2.
 
-## Getting Started
+No projeto foram utilizados recursos como gerência de estado Provider, Regex para validação das chaves, package para máscaras de entrada de informações, Widgets como ListTile, Snackbar, entre outros.
 
-This project is a starting point for a Flutter application.
+Links da documentação oficial utilizada para criação do projeto:
 
-A few resources to get you started if this is your first Flutter project:
+https://pub.dev/packages/provider
+https://api.dart.dev/stable/2.16.1/dart-core/RegExp-class.html
+https://pub.dev/packages/mask_text_input_formatter
+https://docs.flutter.dev/cookbook/design/snackbars
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![til](./assets/img/pix.gif)

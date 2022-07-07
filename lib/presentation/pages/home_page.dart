@@ -1,10 +1,13 @@
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
+
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../repository/keypix_repository.dart';
-
-import 'master_page.dart';
-import 'package:flutter/material.dart';
 import '../../data/libraries/strings.dart' as strings;
+import '../../repository/keypix_repository.dart';
+import 'master_page.dart';
 
 class KeyPixHome extends StatefulWidget {
   KeyPixHome({Key? key, required this.title}) : super(key: key);
