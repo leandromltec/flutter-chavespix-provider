@@ -1,3 +1,6 @@
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
 extension BoolUtils on String {
   bool regexEmail() => RegExp(
           r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")

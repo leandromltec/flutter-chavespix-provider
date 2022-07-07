@@ -1,12 +1,12 @@
-import 'package:chavespix/controller/keypix_controller.dart';
-
-import 'master_page.dart';
-
-import '../widgets/btn_register_key.dart';
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
 
 import 'package:flutter/material.dart';
 
-
+import '../../controller/keypix_controller.dart';
+import '../widgets/btn_register_key.dart';
+import 'master_page.dart';
 
 class PageDefaultPix extends StatefulWidget {
   final String hintText;

@@ -1,10 +1,14 @@
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
+
 import 'dart:collection';
 
 import 'package:chavespix/presentation/pages/default_page.dart';
 import 'package:flutter/material.dart';
 
-import '../data/libraries/strings.dart' as strings;
 import '../data/libraries/masks.dart' as mask;
+import '../data/libraries/strings.dart' as strings;
 import '../model/keypix_model.dart';
 
 class KeysRepository extends ChangeNotifier {
@@ -57,8 +61,6 @@ class KeysRepository extends ChangeNotifier {
             keyName: strings.nameKeyRandomKey,
             keyboardType: TextInputType.text,
             mask: mask.emptyMask,
-            suffixIcon:
-                IconButton(icon: Icon(Icons.paste_rounded), onPressed: () {}),
           )),
     ]);
   }

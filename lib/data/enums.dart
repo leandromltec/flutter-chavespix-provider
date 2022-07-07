@@ -1,3 +1,7 @@
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
+
 enum TypeKeyPixEnum { PHONE, EMAIL, CPF, RANDOM_KEY, OTHER }
 
 TypeKeyPixEnum typeKeyPixEnum(String value) {

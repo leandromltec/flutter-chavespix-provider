@@ -1,3 +1,7 @@
+/* Desenvolvido por Leandro M. Loureiro */
+/* Linkedin - https://www.linkedin.com/in/leandro-loureiro-dev/ */
+/* Github - https://github.com/leandromltec */
+
 library strings;
 
 const cpfCnpjHintText = "000.000.000-00";
