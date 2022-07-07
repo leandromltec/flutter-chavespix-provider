@@ -1,7 +1,5 @@
-import 'package:chavespix/data/enums.dart';
-
-import 'cpf_controller.dart';
-import 'package:chavespix/data/utils.dart';
+import '../data/enums.dart';
+import '../data/utils.dart';
 
 class KeyPixController {
   static bool getValidatedKey(String key, String value) {
@@ -14,7 +12,7 @@ class KeyPixController {
       case TypeKeyPixEnum.EMAIL:
         return validateEmailKey(valueEmail: value);
       case TypeKeyPixEnum.RANDOM_KEY:
-        return validateRandomKey(valueEmail: value);
+        return validateRandomKey(valueRandom: value);
       default:
         return false;
     }
@@ -22,7 +20,7 @@ class KeyPixController {
 
   static bool validateCPFkey({required String valueCpf}) {
     if (valueCpf.length == 14) {
-      return CPFController.isValid(cpf: valueCpf);
+      return valueCpf.validateCpf(cpf: valueCpf);
     }
     return false;
   }
@@ -39,7 +37,8 @@ class KeyPixController {
     return false;
   }
 
-  static bool validateRandomKey({required String valueEmail}) {
+  static bool validateRandomKey({required String valueRandom}) {
+    if (valueRandom.length == 36) return valueRandom.regexRandomKey();
     return false;
   }
 }

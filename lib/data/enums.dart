@@ -8,7 +8,7 @@ TypeKeyPixEnum typeKeyPixEnum(String value) {
       return TypeKeyPixEnum.EMAIL;
     case 'CPF':
       return TypeKeyPixEnum.CPF;
-    case 'Chave aleatória':
+    case 'Chave Aleatória':
       return TypeKeyPixEnum.RANDOM_KEY;
     default:
       return TypeKeyPixEnum.OTHER;
